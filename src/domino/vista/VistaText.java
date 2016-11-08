@@ -2,6 +2,7 @@
 package domino.vista;
 
 import domino.model.Fitxa;
+import java.util.Deque;
 import java.util.List;
 
 
@@ -22,9 +23,11 @@ public class VistaText {
      * Metode per a imprimir les fitxes que s'han jugat fins ara.
      * @param fitxes 
      */
-    public void imprimirFitxesJugades(){
+    public void imprimirFitxesJugades(Deque<Fitxa> fitxesJugades){
         
-        
+        for (int i = 0; i < fitxesJugades.size(); i++) {
+            System.out.println(" " + fitxesJugades);
+        }
         
     }
     

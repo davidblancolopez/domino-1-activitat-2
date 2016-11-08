@@ -7,7 +7,7 @@ import java.util.Random;
 public class Joc {
 
     public final int NUMJUGADORS, NUMFITXES, NUMFITXESJUGADOR;
-    private ArrayDeque<Fitxa> fitxesJugades;
+    public ArrayDeque<Fitxa> fitxesJugades;//Al principio era private
     private ArrayList<Fitxa> fitxesInicials;
     private Jugador[] jugadors;
     private int comptPassar;
