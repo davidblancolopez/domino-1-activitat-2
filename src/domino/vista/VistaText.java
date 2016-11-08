@@ -50,7 +50,7 @@ public class VistaText {
     public void menu(){
         System.out.println("TRIAR JUGADA: \n"
                 + "1. Col·locar 1 fitxa. \n"
-                + "2. Col·locar 2 fitxes \n"
+                + "2. Col·locar 2 dobles \n"
                 + "3. Passar.\n");
     }
     
