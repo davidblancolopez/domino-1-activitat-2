@@ -9,5 +9,7 @@ public class ControlText {
     private Joc joc;
     private VistaText vText;
     
-    
+    public void recollirNoms(){
+        
+    }    
 }

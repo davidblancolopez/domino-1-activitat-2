@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public  class Jugador {
-    private String nom;
+    public String nom;//Al principio era private
     private List<Fitxa> fitxes;
 
     public Jugador( String nom) {      
