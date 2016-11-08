@@ -26,8 +26,8 @@ public class VistaText {
      */
     public void imprimirFitxesJugades(Deque<Fitxa> fitxesJugades){
         
-        for (int i = 0; i < fitxesJugades.size(); i++) {
-            System.out.println(" " + fitxesJugades);
+        for (Fitxa f : joc.getFitxesJugades()){
+            f.getValors()[0];
         }
         
     }
