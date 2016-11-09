@@ -13,6 +13,7 @@ public class ControlText {
     private VistaText vText;
     private Torn torn;
     private Jugador jugador;
+    public  String noms[] = new String [joc.NUMJUGADORS];//VARIABLE posada
     
     
     public ControlText(){
@@ -33,7 +34,7 @@ public class ControlText {
         
         switch(opcio){
             case 1:
-                vText.demanarFitxaJugador();
+                int f = vText.demanarFitxaJugador();
                 torn.colocarUnaFitxa(Fitxa f, boolean extrem);
                 break;
             case 2:
@@ -46,11 +47,12 @@ public class ControlText {
         }
     }
     
-    
-    public void crearJugadors(){
-        
+    /**
+     * Metode per a recollir el nom de tots els jugadors.
+     */
+    public void recollirNomJugadors(){
         for (int i = 0; i < joc.NUMJUGADORS; i++) {
-            Jugador jugador = new Jugador(vText.demanarNomJugador(), ); 
+            noms[i] = vText.demanarNomJugador();
         }
     }
     
