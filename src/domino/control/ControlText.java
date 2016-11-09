@@ -35,7 +35,7 @@ public class ControlText {
         switch(opcio){
             case 1:
                 //f = vText.demanarFitxaJugador();
-                boolean extrem = vText.demanarCostat();
+                //boolean extrem = vText.demanarCostat();
                 //torn.colocarUnaFitxa(f, extrem);
                 break;
             case 2:
@@ -43,7 +43,7 @@ public class ControlText {
                 //torn.colocarDosDobles(d1, extrem, d2, extrem);
                 break;
             case 3:
-                torn.passar();
+                //torn.passar();
                 break;
         }
     }

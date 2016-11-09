@@ -66,6 +66,11 @@ public class VistaText {
         return fitxa - 1;
     }
     
+    /**
+     * MEtode per a demaar el costat on es posara la fitxa, seogns el costat serà 
+     * true o false.
+     * @return 
+     */
     public boolean demanarCostat(){
         String posicio;
         boolean costat = false;
