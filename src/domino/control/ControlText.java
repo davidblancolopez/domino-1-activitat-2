@@ -23,7 +23,7 @@ public class ControlText {
         
     public String recollirNom(){
         String nom;
-        nom = vText.demanarNomJugadors();
+        nom = vText.demanarNomJugador();
         return nom;
     }    
     
@@ -49,6 +49,9 @@ public class ControlText {
     
     public void crearJugadors(){
         
+        for (int i = 0; i < joc.NUMJUGADORS; i++) {
+            Jugador jugador = new Jugador(vText.demanarNomJugador(), ); 
+        }
     }
     
 }

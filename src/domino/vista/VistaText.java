@@ -22,6 +22,8 @@ public class VistaText {
             
     }
     
+    
+    
     /**
      * Metode per a imprimir les fitxes que s'han jugat fins ara.
      * @param fitxes 
@@ -33,6 +35,10 @@ public class VistaText {
         }
         
     }
+    
+    
+    
+    
     
     /**
      * Metode per a imprimir les fitxes que encara té el jugador per a posar.
@@ -46,6 +52,9 @@ public class VistaText {
         
     }
     
+    
+    
+    
     /**
      * Metode per a demanar la posició de la fitza que el jugador posara.
      * @return 
@@ -54,8 +63,10 @@ public class VistaText {
         int fitxa;
         System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
         fitxa = lector.nextInt();
-        return fitxa;
+        return fitxa - 1;
     }
+    
+    
     
     
     /**
@@ -71,14 +82,19 @@ public class VistaText {
         return opcio = lector.nextInt();
     }
     
+    
+    
+    
     /**
      * Metode per a demaa el numero de jugadors.
      */
-    public int demanarNumeroJugadors(){
+    /*public int demanarNumeroJugadors(){
         int numJugadors;
         System.out.println("Introdueix el numero de jugadors: ");
         return numJugadors = lector.nextInt();
-    }
+    }*/
+    
+    
     
     
 
@@ -92,4 +108,8 @@ public class VistaText {
         nom = lector.next();
         return nom;
     }
+    
+    
+    
+    
 }
