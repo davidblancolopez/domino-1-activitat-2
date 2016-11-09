@@ -51,10 +51,12 @@ public class VistaText {
      * @return 
      */
     public int demanarFitxaJugador(){
-        int fitxa = 0;
-        System.out.println("");
+        int fitxa;
+        System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
+        fitxa = lector.nextInt();
         return fitxa;
     }
+    
     
     /**
      * Metode per a mostrar un menu de joc per a que el jugador del torn actual
@@ -70,7 +72,7 @@ public class VistaText {
     }
     
     /**
-     * MEtode per a demaa el numero de jugadors.
+     * Metode per a demaa el numero de jugadors.
      */
     public int demanarNumeroJugadors(){
         int numJugadors;
@@ -80,8 +82,14 @@ public class VistaText {
     
     
 
-    
-    public void demanarNomJugadors(){
-        
+    /**
+     * Metode per a demanar el nom dels jugadors.
+     * @return 
+     */
+    public String demanarNomJugador(){
+        String nom;
+        System.out.println("Introdueix nom del jugador: ");
+        nom = lector.next();
+        return nom;
     }
 }

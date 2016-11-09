@@ -23,8 +23,7 @@ public class Torn {
         return correcte;
     }
 
-    public boolean colocarDosDobles(Fitxa d1, boolean extrem1, Fitxa d2,
-            boolean extrem2) {
+    public boolean colocarDosDobles(Fitxa d1, boolean extrem1, Fitxa d2, boolean extrem2) {
         boolean correcte = false;
 
         if (isDoble(d1) && isDoble(d2)) {

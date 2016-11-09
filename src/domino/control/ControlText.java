@@ -4,6 +4,7 @@ package domino.control;
 import domino.model.Fitxa;
 import domino.model.Joc;
 import domino.model.Torn;
+import domino.model.Jugador;
 import domino.vista.VistaText;
 
 
@@ -11,16 +12,19 @@ public class ControlText {
     private Joc joc;
     private VistaText vText;
     private Torn torn;
+    private Jugador jugador;
+    
     
     public ControlText(){
         this.joc = new Joc(4,28,7);
         this.vText = new VistaText();
-        this.torn = new Torn(joc);
+        this.torn = new Torn(joc);//
     }
         
-    public void recollirNoms(){
-        vText.demanarNumeroJugadors();
-        
+    public String recollirNom(){
+        String nom;
+        nom = vText.demanarNomJugadors();
+        return nom;
     }    
     
     public void respostaMenu(){
@@ -29,9 +33,11 @@ public class ControlText {
         
         switch(opcio){
             case 1:
+                vText.demanarFitxaJugador();
                 torn.colocarUnaFitxa(Fitxa f, boolean extrem);
                 break;
             case 2:
+                     
                 torn.colocarDosDobles(d1, extrem, d2, extrem);
                 break;
             case 3:
@@ -39,4 +45,10 @@ public class ControlText {
                 break;
         }
     }
+    
+    
+    public void crearJugadors(){
+        
+    }
+    
 }
