@@ -33,6 +33,7 @@ public class Torn {
          this.joc.setComptPassar(0);
         return correcte;
     }
+    
     public void passar(){
         joc.setComptPassar( joc.getComptPassar()+1);
     }
