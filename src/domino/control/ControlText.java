@@ -34,12 +34,13 @@ public class ControlText {
         
         switch(opcio){
             case 1:
-                int f = vText.demanarFitxaJugador();
-                torn.colocarUnaFitxa(Fitxa f, boolean extrem);
+                //f = vText.demanarFitxaJugador();
+                boolean extrem = vText.demanarCostat();
+                //torn.colocarUnaFitxa(f, extrem);
                 break;
             case 2:
                      
-                torn.colocarDosDobles(d1, extrem, d2, extrem);
+                //torn.colocarDosDobles(d1, extrem, d2, extrem);
                 break;
             case 3:
                 torn.passar();

@@ -66,6 +66,24 @@ public class VistaText {
         return fitxa - 1;
     }
     
+    public boolean demanarCostat(){
+        String posicio;
+        boolean costat = false;
+        do{
+        System.out.println("A quin costat vols posar la fitxa? 'E' esquerra 'D' dreta");
+        posicio = lector.next();
+            if (posicio.equals("E") || posicio.equals("e") || posicio.equals("D") || posicio.equals("d")) {
+                break;
+            }
+        }while(true);
+        
+        if (posicio.equals("e") || posicio.equals("E")) {
+            costat = true;
+        }else if(posicio.equals("D") || posicio.equals("d")){
+            costat = false;
+        }
+        return costat;
+    }
     
     
     
