@@ -107,20 +107,6 @@ public class VistaText {
     
     
     
-    
-    /**
-     * Metode per a demanar el numero de jugadors.
-     */
-    /*public int demanarNumeroJugadors(){
-        int numJugadors;
-        System.out.println("Introdueix el numero de jugadors: ");
-        return numJugadors = lector.nextInt();
-    }*/
-    
-    
-    
-    
-
     /**
      * Metode per a demanar el nom dels jugadors.
      * @return 
