@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class VistaText {
+
+    
     private Scanner lector = new Scanner(System.in);
     
     /**
@@ -27,7 +29,7 @@ public class VistaText {
     public void imprimirFitxesJugades(Deque<Fitxa> fitxesJugades){
         
         for (Fitxa f : joc.getFitxesJugades()){
-            f.getValors()[0];
+            f.getValors()[];
         }
         
     }
@@ -42,6 +44,16 @@ public class VistaText {
             System.out.print(" " + fitxes.get(i).valors[0] + ":" + fitxes.get(i).valors[1] + " ");
         }
         
+    }
+    
+    /**
+     * Metode per a demanar la posició de la fitza que el jugador posara.
+     * @return 
+     */
+    public int demanarFitxaJugador(){
+        int fitxa = 0;
+        System.out.println("");
+        return fitxa;
     }
     
     /**
@@ -66,6 +78,8 @@ public class VistaText {
         return numJugadors = lector.nextInt();
     }
     
+    
+
     
     public void demanarNomJugadors(){
         
