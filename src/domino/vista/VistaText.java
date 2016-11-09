@@ -86,7 +86,7 @@ public class VistaText {
     
     
     /**
-     * Metode per a demaa el numero de jugadors.
+     * Metode per a demanar el numero de jugadors.
      */
     /*public int demanarNumeroJugadors(){
         int numJugadors;
