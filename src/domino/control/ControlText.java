@@ -41,7 +41,11 @@ public class ControlText {
            vText.imprimirFitxesJugador(jugador.getFitxes());
             System.out.println();
            respostaMenuJugada(); 
+           joc.actualitzarEstat();
+           
         }while(joc.isFinalitzat());
+        
+        
     }
     
     
