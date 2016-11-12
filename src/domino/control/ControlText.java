@@ -42,15 +42,7 @@ public class ControlText {
     
     
 
-    /**
-     * Metode per a recollir el nom de jugador.
-     * @return 
-     */
-    public String recollirNom(){
-        String nom;
-        nom = vText.demanarNomJugador();
-        return nom;
-    }    
+
     
     
     /**
