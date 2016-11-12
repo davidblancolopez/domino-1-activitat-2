@@ -64,14 +64,31 @@ public class VistaText {
     
     /**
      * Metode per a demanar la posició de la fitza que el jugador posara.
+     * @param fitxa
      * @return 
      */
-    public int demanarFitxaJugador(){
-        int fitxa;
+    public int demanarFitxaJugador(List<Fitxa> fitxa){
+        int posicio;
+        do{
         System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
-        fitxa = lector.nextInt();
-        return fitxa - 1;
+        posicio = lector.nextInt();
+        }while(comprovarFitxaIntroduida(posicio, fitxa.size()));
+        return posicio - 1;
     }
+    
+    public boolean comprovarFitxaIntroduida(int fitxa, int longitudFitxesJugador){
+        boolean comprovar;
+        
+        if (fitxa > 0 && longitudFitxesJugador >= 7) {
+            comprovar = false;
+        }
+        
+        comprovar = true;
+        
+        return comprovar;
+    }
+    
+    
     
     /**
      * MEtode per a demaar el costat on es posara la fitxa, seogns el costat serà 

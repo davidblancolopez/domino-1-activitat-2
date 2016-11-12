@@ -43,9 +43,7 @@ public class ControlText {
         
         switch(opcio){
             case 1:
-                //f = vText.demanarFitxaJugador();
-                //boolean extrem = vText.demanarCostat();
-                //torn.colocarUnaFitxa(f, extrem);
+                
                 break;
             case 2:
                      
@@ -71,7 +69,9 @@ public class ControlText {
      * Metode per jugada de 1 fitza.
      */
     public void posar1Fitxa(){
-        
+        int f = vText.demanarFitxaJugador();
+        boolean extrem = vText.demanarCostat();
+        torn.colocarUnaFitxa(f, extrem);
     }
     
     
