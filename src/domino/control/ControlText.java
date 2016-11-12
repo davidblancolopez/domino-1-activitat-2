@@ -85,10 +85,17 @@ public class ControlText {
      * Metode per jugada de 1 fitza.
      */
     public void posar1Fitxa(){
+        //Declaració de variables.
         Fitxa f;
-        int f1 = vText.demanarFitxaJugador (jugador.getFitxes());
-        f = jugador.fitxes.get(f1);
-        boolean extrem = vText.demanarCostat();
+        int p1;
+        boolean extrem;
+        
+        //Fitxa.
+        p1 = vText.demanarFitxaJugador (jugador.getFitxes());
+        f = jugador.fitxes.get(p1);
+        extrem = vText.demanarCostat();
+        
+        //Cridem al metode que col·loca la fitxa.
         torn.colocarUnaFitxa(f, extrem);
     }
     
@@ -102,7 +109,23 @@ public class ControlText {
      * Metode per a posar 2 dobles.
      */
     public void posar2Dobles(){
-        //torn.colocarDosDobles(d1, extrem, d2, extrem);
+        //Declaració de variables.
+        Fitxa d1, d2;
+        int p1, p2;
+        boolean extremP1, extremP2;
+        
+        //Primer doble.
+        p1 = vText.demanarFitxaJugador (jugador.getFitxes());
+        extremP1 = vText.demanarCostat();
+        d1 = jugador.fitxes.get(p1);
+        
+        //Segon doble.
+        p2 = vText.demanarFitxaJugador (jugador.getFitxes());
+        extremP2 = vText.demanarCostat();
+        d2 = jugador.fitxes.get(p2);
+        
+        //Cridem al metode que col·loca els dobles.
+        torn.colocarDosDobles(d1, extremP1, d2, extremP2);
     }
     
     
