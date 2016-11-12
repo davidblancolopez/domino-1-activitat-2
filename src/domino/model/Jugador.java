@@ -5,7 +5,7 @@ import java.util.List;
 
 public  class Jugador {
     public String nom;//Al principio era private
-    private List<Fitxa> fitxes;
+    public List<Fitxa> fitxes;
 
     public Jugador( String nom) {      
         this.nom = nom;

@@ -23,6 +23,8 @@ public class Torn {
         return correcte;
     }
 
+    
+    
     public boolean colocarDosDobles(Fitxa d1, boolean extrem1, Fitxa d2, boolean extrem2) {
         boolean correcte = false;
 
@@ -34,19 +36,27 @@ public class Torn {
         return correcte;
     }
     
+    
+    
     public void passar(){
         joc.setComptPassar( joc.getComptPassar()+1);
     }
 
+    
+    
     public void inicial() {
         joc.getFitxesJugades().add(joc.getFitxaInicial());
         joc.getJugadors()[joc.getTorn()].colocarFitxa(joc.getFitxaInicial());
     }
 
+    
+    
     private boolean isDoble(Fitxa f) {
         return f.getValors()[0] == f.getValors()[1];
     }
 
+    
+    
     private boolean comprovaFitxa(Fitxa f, boolean extrem) {
         boolean correcte = false;
         if (extrem) {

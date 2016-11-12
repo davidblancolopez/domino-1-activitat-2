@@ -6,6 +6,7 @@ import domino.model.Joc;
 import domino.model.Torn;
 import domino.model.Jugador;
 import domino.vista.VistaText;
+import java.util.List;
 
 
 public class ControlText {
@@ -14,6 +15,7 @@ public class ControlText {
     private Torn torn;
     private Jugador jugador;
     public  String noms[] = new String [joc.NUMJUGADORS];//VARIABLE posada
+    private Fitxa fitxa;
     
     
     public ControlText(){
@@ -69,9 +71,9 @@ public class ControlText {
      * Metode per jugada de 1 fitza.
      */
     public void posar1Fitxa(){
-        int f = vText.demanarFitxaJugador();
+        int f1 = vText.demanarFitxaJugador (List<Fitxa> fitxa);
         boolean extrem = vText.demanarCostat();
-        torn.colocarUnaFitxa(f, extrem);
+        torn.colocarUnaFitxa(jugador.fitxes.get(fitxa.valors), extrem);
     }
     
     
