@@ -11,6 +11,10 @@ public class VistaText {
 
     
     private Scanner lector = new Scanner(System.in);
+
+    
+    
+
     
     /**
      * Metode per a imprimir les dades del torn actual, numero del torn i nom del jugador.

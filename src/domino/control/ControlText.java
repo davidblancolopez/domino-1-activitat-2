@@ -22,7 +22,24 @@ public class ControlText {
         this.joc = new Joc(4,28,7);
         this.vText = new VistaText();
         this.torn = new Torn(joc);//
+
     }
+    
+    
+    
+    /**
+     * Començar joc
+     */
+    public void començarJoc(){
+        recollirNomJugadors();
+        joc.iniciar(noms);
+    }
+    
+    
+    
+    
+    
+    
     
 
     /**
@@ -71,9 +88,9 @@ public class ControlText {
      * Metode per jugada de 1 fitza.
      */
     public void posar1Fitxa(){
-        int f1 = vText.demanarFitxaJugador (List<Fitxa> fitxa);
-        boolean extrem = vText.demanarCostat();
-        torn.colocarUnaFitxa(jugador.fitxes.get(fitxa.valors), extrem);
+//        int f1 = vText.demanarFitxaJugador (List<Fitxa> fitxa);
+//        boolean extrem = vText.demanarCostat();
+//        torn.colocarUnaFitxa(f1, extrem);
     }
     
     
