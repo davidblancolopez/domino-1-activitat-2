@@ -69,13 +69,22 @@ public class VistaText {
      */
     public int demanarFitxaJugador(List<Fitxa> fitxa){
         int posicio;
+        
         do{
         System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
         posicio = lector.nextInt();
         }while(comprovarFitxaIntroduida(posicio, fitxa.size()));
+        
         return posicio - 1;
     }
     
+    
+    /**
+     * Metode que comprova que la fitxa introduida per el jugador es correcte.
+     * @param fitxa
+     * @param longitudFitxesJugador
+     * @return 
+     */
     public boolean comprovarFitxaIntroduida(int fitxa, int longitudFitxesJugador){
         boolean comprovar;
         
