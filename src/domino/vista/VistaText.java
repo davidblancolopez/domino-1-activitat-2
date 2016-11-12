@@ -132,7 +132,11 @@ public class VistaText {
         return opcio = lector.nextInt();
     }
     
-    
+    /**
+     * Metode per a comprovar que la opcio introduida al menu es correcte.
+     * @param opcio
+     * @return 
+     */
     public boolean comprovarMenu(int opcio){
         boolean comprovar;
         
