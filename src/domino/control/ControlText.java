@@ -41,30 +41,7 @@ public class ControlText {
     
     
     
-
-
     
-    
-    /**
-     * Metode de resposta del menú de jugada.
-     */
-    public void respostaMenu(){
-        int opcio = 0;
-        opcio = vText.menu();
-        
-        switch(opcio){
-            case 1:
-                
-                break;
-            case 2:
-                     
-                //torn.colocarDosDobles(d1, extrem, d2, extrem);
-                break;
-            case 3:
-                //torn.passar();
-                break;
-        }
-    }
     
     /**
      * Metode per a recollir el nom de tots els jugadors.
@@ -76,21 +53,56 @@ public class ControlText {
     }
     
     
+    
+
+
+    
+    
+    /**
+     * Metode de resposta del menú de jugada.
+     */
+    public void respostaMenuJugada(){
+        int opcio = 0;
+        opcio = vText.menu();
+        
+        switch(opcio){
+            case 1:
+                posar1Fitxa();
+                break;
+            case 2:
+                posar2Dobles();
+                break;
+            case 3:
+                torn.passar();
+                break;
+        }
+    }
+    
+
+    
+    
     /**
      * Metode per jugada de 1 fitza.
      */
     public void posar1Fitxa(){
-//        int f1 = vText.demanarFitxaJugador (List<Fitxa> fitxa);
-//        boolean extrem = vText.demanarCostat();
-//        torn.colocarUnaFitxa(f1, extrem);
+        Fitxa f;
+        int f1 = vText.demanarFitxaJugador (jugador.getFitxes());
+        f = jugador.fitxes.get(f1);
+        boolean extrem = vText.demanarCostat();
+        torn.colocarUnaFitxa(f, extrem);
     }
+    
+    
+    
+    
+    
     
     
     /**
      * Metode per a posar 2 dobles.
      */
     public void posar2Dobles(){
-        
+        //torn.colocarDosDobles(d1, extrem, d2, extrem);
     }
     
     

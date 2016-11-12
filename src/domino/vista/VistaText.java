@@ -67,7 +67,7 @@ public class VistaText {
     
     
     /**
-     * Metode per a demanar la posició de la fitza que el jugador posara.
+     * Metode per a demanar la posició de la fitxa que el jugador posara.
      * @param fitxa
      * @return 
      */
@@ -81,6 +81,11 @@ public class VistaText {
         
         return posicio - 1;
     }
+    
+    
+    
+    
+    
     
     
     /**
@@ -100,6 +105,10 @@ public class VistaText {
         
         return comprovar;
     }
+    
+    
+    
+    
     
     
     
@@ -126,6 +135,13 @@ public class VistaText {
         return costat;
     }
     
+    
+    
+    
+    
+    
+    
+    
     /**
      * MEtode per a comprovar que el costat introduit es correcte.
      * @param opcio
@@ -142,6 +158,9 @@ public class VistaText {
         
         return comprovar;
     }
+    
+    
+    
     
     
     
@@ -162,6 +181,11 @@ public class VistaText {
         return opcio = lector.nextInt();
     }
     
+    
+    
+    
+    
+    
     /**
      * Metode per a comprovar que la opcio introduida al menu es correcte.
      * @param opcio
@@ -178,6 +202,10 @@ public class VistaText {
         
         return comprovar;
     }
+    
+    
+    
+    
     
     
     /**
