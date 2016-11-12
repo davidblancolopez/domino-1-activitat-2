@@ -45,7 +45,7 @@ public class ControlText {
            
         }while(joc.isFinalitzat());
         
-        
+        Jugador guanyador = joc.trobarGuanyador();
     }
     
     

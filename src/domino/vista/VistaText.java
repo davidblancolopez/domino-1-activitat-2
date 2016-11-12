@@ -3,6 +3,7 @@ package domino.vista;
 
 import domino.model.Fitxa;
 import domino.model.Joc;
+import domino.model.Jugador;
 import java.util.Deque;
 import java.util.List;
 import java.util.Scanner;
@@ -221,5 +222,10 @@ public class VistaText {
     
     
     
+    
+    
+    public void imprimirGuanyador(Jugador guanyador){
+        System.out.println("El guanyador es: " + guanyador);
+    }
     
 }
