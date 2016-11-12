@@ -30,9 +30,18 @@ public class ControlText {
     /**
      * Començar joc
      */
-    public void començarJoc(){
+    public void JugarJoc(){
         recollirNomJugadors();
         joc.iniciar(noms);
+        do{
+           vText.imprimirDadesTorn(joc.getTorn(), jugador.getNom());
+            System.out.println();
+           vText.imprimirFitxesJugades(joc.getFitxesJugades());
+            System.out.println();
+           vText.imprimirFitxesJugador(jugador.getFitxes());
+            System.out.println();
+           respostaMenuJugada(); 
+        }while(joc.isFinalitzat());
     }
     
     
