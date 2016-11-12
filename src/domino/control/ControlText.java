@@ -21,13 +21,22 @@ public class ControlText {
         this.vText = new VistaText();
         this.torn = new Torn(joc);//
     }
-        
+    
+
+    /**
+     * Metode per a recollir el nom de jugador.
+     * @return 
+     */
     public String recollirNom(){
         String nom;
         nom = vText.demanarNomJugador();
         return nom;
     }    
     
+    
+    /**
+     * Metode de resposta del menú de jugada.
+     */
     public void respostaMenu(){
         int opcio = 0;
         opcio = vText.menu();
@@ -56,5 +65,22 @@ public class ControlText {
             noms[i] = vText.demanarNomJugador();
         }
     }
+    
+    
+    /**
+     * Metode per jugada de 1 fitza.
+     */
+    public void posar1Fitxa(){
+        
+    }
+    
+    
+    /**
+     * Metode per a posar 2 dobles.
+     */
+    public void posar2Dobles(){
+        
+    }
+    
     
 }

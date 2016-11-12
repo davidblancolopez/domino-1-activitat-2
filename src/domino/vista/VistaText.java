@@ -2,12 +2,13 @@
 package domino.vista;
 
 import domino.model.Fitxa;
+import domino.model.Joc;
 import java.util.Deque;
 import java.util.List;
 import java.util.Scanner;
 
 public class VistaText {
-
+Joc joc = new Joc();
     
     private Scanner lector = new Scanner(System.in);
     
@@ -31,7 +32,7 @@ public class VistaText {
     public void imprimirFitxesJugades(Deque<Fitxa> fitxesJugades){
         
         for (Fitxa f : joc.getFitxesJugades()){
-            f.getValors()[];
+            f.getValors()[0];
         }
         
     }
