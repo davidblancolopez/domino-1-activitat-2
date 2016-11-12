@@ -82,12 +82,11 @@ public class VistaText {
         String posicio;
         boolean costat = false;
         do{
+            
         System.out.println("A quin costat vols posar la fitxa? 'E' esquerra 'D' dreta");
         posicio = lector.next();
-            if (posicio.equals("E") || posicio.equals("e") || posicio.equals("D") || posicio.equals("d")) {
-                break;
-            }
-        }while(true);
+        
+        }while(comprovarCostat(posicio));
         
         if (posicio.equals("e") || posicio.equals("E")) {
             costat = true;
@@ -95,6 +94,23 @@ public class VistaText {
             costat = false;
         }
         return costat;
+    }
+    
+    /**
+     * MEtode per a comprovar que el costat introduit es correcte.
+     * @param opcio
+     * @return 
+     */
+    public boolean comprovarCostat (String opcio){
+        boolean comprovar;
+        
+        if (opcio.equals("e") || opcio.equals("E") || opcio.equals("D") || opcio.equals("d")) {
+            comprovar = false;
+        }
+        
+        comprovar = true;
+        
+        return comprovar;
     }
     
     
@@ -105,13 +121,29 @@ public class VistaText {
      */
     public int menu(){
         int opcio;
+        
+        do{
         System.out.println("TRIAR JUGADA: \n"
                 + "1. Col·locar 1 fitxa. \n"
                 + "2. Col·locar 2 dobles \n"
                 + "3. Passar.\n");
+        }while(comprovarMenu(lector.nextInt()));
+        
         return opcio = lector.nextInt();
     }
     
+    
+    public boolean comprovarMenu(int opcio){
+        boolean comprovar;
+        
+        if (opcio > 0 && opcio < 4) {
+            comprovar = false;
+        }
+        
+        comprovar = true;
+        
+        return comprovar;
+    }
     
     
     /**
