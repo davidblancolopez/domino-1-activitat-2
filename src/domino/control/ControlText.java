@@ -75,8 +75,12 @@ public class ControlText {
                 }while(true);
                 
             case 2:
-                posar2Dobles();
-                break;
+                do{
+                boolean correcte = posar2Dobles();
+                    if (correcte) {
+                      break;  
+                    }
+                }while(true);
             case 3:
                 torn.passar();
                 break;
