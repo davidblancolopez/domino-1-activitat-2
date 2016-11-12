@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class VistaText {
-Joc joc = new Joc();
+
     
     private Scanner lector = new Scanner(System.in);
     
@@ -31,9 +31,15 @@ Joc joc = new Joc();
      */
     public void imprimirFitxesJugades(Deque<Fitxa> fitxesJugades){
         
-        for (Fitxa f : joc.getFitxesJugades()){
-            f.getValors()[0];
+        StringBuilder tauler= new StringBuilder();
+        tauler.append("-");
+        for(Fitxa fitxa: fitxesJugades){
+                tauler.append(fitxa.getValors()[0]);
+                tauler.append(":");
+                tauler.append(fitxa.getValors()[1]);
+                tauler.append("-");
         }
+        System.out.println(tauler);
         
     }
     
