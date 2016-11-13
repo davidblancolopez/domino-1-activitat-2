@@ -103,7 +103,7 @@ public class ControlText {
 
         //Fitxa.
         p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
-        f = jugador.fitxes.get(p1);
+        f = joc.jugadors[joc.getTorn()].getFitxes().get(p1);
         extrem = vText.demanarCostat();
 
         //Cridem al metode que col·loca la fitxa.
