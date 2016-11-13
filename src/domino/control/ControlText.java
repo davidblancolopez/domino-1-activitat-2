@@ -93,6 +93,9 @@ public class ControlText {
             case 3:
                 torn.passar();
                 break;
+            default:
+                System.out.println("Opció incorrecta.");
+                break;
         }
     }
 
