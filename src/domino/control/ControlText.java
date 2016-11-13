@@ -29,26 +29,26 @@ public class ControlText {
     public void JugarJoc() {
         recollirNomJugadors();
         joc.iniciar(noms);
-        
+
         torn.inicial();
         do {
             //Imprimim les dades del jugador que li toca.
             vText.imprimirDadesTorn(joc.getTorn(), joc.jugadors[joc.getTorn()]);
             System.out.println();
-            
+
             //Imprimim les fitxes que s'han jugat fins ara.
             vText.imprimirFitxesJugades(joc.fitxesJugades);
             System.out.println();
-            
+
             //Imprimim les fitxes del jugador.
             vText.imprimirFitxesJugador(joc.jugadors[joc.getTorn()].getFitxes());
             System.out.println();
-            
+
             //Passem a mostrar el menú al jugador per a que decideixi com jugar.
-            respostaMenuJugada(); 
-           
-           //Actualitzem l'estat del joc.
-           joc.actualitzarEstat();
+            respostaMenuJugada();
+
+            //Actualitzem l'estat del joc.
+            joc.actualitzarEstat();
 
         } while (!joc.isFinalitzat());
 
@@ -80,7 +80,7 @@ public class ControlText {
                         break;
                     }
                 } while (true);
-
+                break;
             case 2:
                 do {
                     boolean correcte = posar2Dobles();
@@ -88,6 +88,7 @@ public class ControlText {
                         break;
                     }
                 } while (true);
+                break;
             case 3:
                 torn.passar();
                 break;
@@ -127,11 +128,13 @@ public class ControlText {
         boolean extremP1, extremP2, correcte;
 
         //Primer doble.
+        System.out.println("1r doble.");
         p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         extremP1 = vText.demanarCostat();
         d1 = jugador.fitxes.get(p1);
 
         //Segon doble.
+        System.out.println("2n doble.");
         p2 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         extremP2 = vText.demanarCostat();
         d2 = jugador.fitxes.get(p2);
