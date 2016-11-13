@@ -84,7 +84,7 @@ public class VistaText {
     public boolean comprovarFitxaIntroduida(int fitxa, int longitudFitxesJugador) {
         boolean comprovar = true;;
 
-        if (fitxa > 0 && longitudFitxesJugador >= 7) {
+        if (fitxa > 0 && longitudFitxesJugador <= 7) {
             comprovar = false;
         }
 
