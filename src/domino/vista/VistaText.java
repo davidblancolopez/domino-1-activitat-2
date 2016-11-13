@@ -169,17 +169,16 @@ public class VistaText {
      * decideixi quina jugada vol fer.
      */
     public int menu(){
-        int opcio;
         
         do{
         System.out.println("TRIAR JUGADA: \n"
                 + "1. Col·locar 1 fitxa. \n"
                 + "2. Col·locar 2 dobles \n"
-                + "3. Passar.\n");
-        opcio = lector.nextInt();
-        }while(comprovarMenu(opcio));
+                + "3. Passar. \n"
+                + "4nada");
+        }while(comprovarMenu(lector.nextInt()));
         
-        return opcio;
+        return lector.nextInt();
     }
     
     
