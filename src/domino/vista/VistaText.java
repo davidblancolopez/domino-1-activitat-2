@@ -37,8 +37,9 @@ public class VistaText {
     public void imprimirFitxesJugades(Deque<Fitxa> fitxesJugades){
         
         StringBuilder tauler = new StringBuilder();
-        tauler.append(" |");
+        
         for(Fitxa fitxa : fitxesJugades){
+                tauler.append(" |");
                 tauler.append(fitxa.getValors()[0]);
                 tauler.append(":");
                 tauler.append(fitxa.getValors()[1]);

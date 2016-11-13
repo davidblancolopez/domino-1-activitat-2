@@ -9,7 +9,7 @@ public class Joc {
     public final int NUMJUGADORS, NUMFITXES, NUMFITXESJUGADOR;
     public ArrayDeque<Fitxa> fitxesJugades;//Al principio era private
     private ArrayList<Fitxa> fitxesInicials;
-    private Jugador[] jugadors;
+    public Jugador[] jugadors;//Al principio era private
     private int comptPassar;
     public int torn;//Al principio era private
     private boolean finalitzat;

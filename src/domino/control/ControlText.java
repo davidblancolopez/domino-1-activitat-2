@@ -22,6 +22,7 @@ public class ControlText {
         this.joc = new Joc(4,28,7);
         this.vText = new VistaText();
         this.torn = new Torn(joc);//
+        
 
     }
     
@@ -34,18 +35,19 @@ public class ControlText {
         recollirNomJugadors();
         joc.iniciar(noms);
         do{
-           vText.imprimirDadesTorn(joc.getTorn(), jugador.getNom());
-            System.out.println();
-           vText.imprimirFitxesJugades(joc.getFitxesJugades());
-            System.out.println();
-           vText.imprimirFitxesJugador(jugador.getFitxes());
-            System.out.println();
-           respostaMenuJugada(); 
-           joc.actualitzarEstat();
+            vText.imprimirFitxesJugades(joc.getFitxesJugades());
+//           vText.imprimirDadesTorn(joc.getTorn(), "");
+//            System.out.println();
+//           vText.imprimirFitxesJugades(joc.getFitxesJugades());
+//            System.out.println();
+//           vText.imprimirFitxesJugador();
+//            System.out.println();
+//           respostaMenuJugada(); 
+//           joc.actualitzarEstat();
            
-        }while(joc.isFinalitzat());
+        }while(!joc.isFinalitzat());
         
-        vText.imprimirGuanyador(joc.trobarGuanyador());
+//        vText.imprimirGuanyador(joc.trobarGuanyador());
         
     }
     
