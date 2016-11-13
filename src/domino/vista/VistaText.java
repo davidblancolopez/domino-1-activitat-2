@@ -177,7 +177,7 @@ public class VistaText {
     }
 
     public void imprimirGuanyador(Jugador guanyador) {
-        System.out.println("El guanyador es: " + guanyador);
+        System.out.println("El guanyador es: " + guanyador.getNom());
     }
 
 }
