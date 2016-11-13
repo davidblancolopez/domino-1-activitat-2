@@ -35,7 +35,7 @@ public class ControlText {
             System.out.println();
             
             //Imprimim les fitxes que s'han jugat fins ara.
-            vText.imprimirFitxesJugades(joc.getFitxesJugades());
+            vText.imprimirFitxesJugades(joc.fitxesJugades);
             System.out.println();
             
             //Imprimim les fitxes del jugador.
@@ -102,7 +102,7 @@ public class ControlText {
         boolean extrem, correcte;
 
         //Fitxa.
-        p1 = vText.demanarFitxaJugador(jugador.getFitxes());
+        p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         f = jugador.fitxes.get(p1);
         extrem = vText.demanarCostat();
 
@@ -122,12 +122,12 @@ public class ControlText {
         boolean extremP1, extremP2, correcte;
 
         //Primer doble.
-        p1 = vText.demanarFitxaJugador(jugador.getFitxes());
+        p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         extremP1 = vText.demanarCostat();
         d1 = jugador.fitxes.get(p1);
 
         //Segon doble.
-        p2 = vText.demanarFitxaJugador(jugador.getFitxes());
+        p2 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         extremP2 = vText.demanarCostat();
         d2 = jugador.fitxes.get(p2);
 
