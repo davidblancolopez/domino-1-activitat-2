@@ -14,7 +14,7 @@ public class ControlText {
     private VistaText vText;
     private Torn torn;
     private Jugador jugador;
-    public  String noms[] = new String [joc.NUMJUGADORS];//VARIABLE posada
+    public  String noms[] = new String [4];//VARIABLE posada
     private Fitxa fitxa;
     
     
@@ -61,7 +61,7 @@ public class ControlText {
      * Metode per a recollir el nom de tots els jugadors.
      */
     public void recollirNomJugadors(){
-        for (int i = 0; i < joc.NUMJUGADORS; i++) {
+        for (int i = 0; i < 4; i++) {
             noms[i] = vText.demanarNomJugador();
         }
     }

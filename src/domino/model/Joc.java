@@ -11,7 +11,7 @@ public class Joc {
     private ArrayList<Fitxa> fitxesInicials;
     private Jugador[] jugadors;
     private int comptPassar;
-    private int torn;
+    public int torn;//Al principio era private
     private boolean finalitzat;
     private Jugador guanyador;
     private Fitxa fitxaInicial;
