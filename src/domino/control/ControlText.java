@@ -30,14 +30,23 @@ public class ControlText {
         recollirNomJugadors();
         joc.iniciar(noms);
         do {
+            //Imprimim les dades del jugador que li toca.
             vText.imprimirDadesTorn(joc.getTorn(), joc.jugadors[joc.getTorn()]);
             System.out.println();
-//           vText.imprimirFitxesJugades(joc.getFitxesJugades());
-//            System.out.println();
-//           vText.imprimirFitxesJugador();
-//            System.out.println();
-//           respostaMenuJugada(); 
-//           joc.actualitzarEstat();
+            
+            //Imprimim les fitxes que s'han jugat fins ara.
+            vText.imprimirFitxesJugades(joc.getFitxesJugades());
+            System.out.println();
+            
+            //Imprimim les fitxes del jugador.
+            vText.imprimirFitxesJugador(joc.jugadors[joc.getTorn()].getFitxes());
+            System.out.println();
+            
+            //Passem a mostrar el menú al jugador per a que decideixi com jugar.
+            respostaMenuJugada(); 
+           
+           //Actualitzem l'estat del joc.
+           joc.actualitzarEstat();
 
         } while (!joc.isFinalitzat());
 
@@ -58,6 +67,7 @@ public class ControlText {
      */
     public void respostaMenuJugada() {
         int opcio = 0;
+        //Mostrem el menú de jugades disponibles per al jugador.
         opcio = vText.menu();
 
         switch (opcio) {
