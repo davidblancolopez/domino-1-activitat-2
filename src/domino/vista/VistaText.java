@@ -176,9 +176,10 @@ public class VistaText {
                 + "1. Col·locar 1 fitxa. \n"
                 + "2. Col·locar 2 dobles \n"
                 + "3. Passar.\n");
-        }while(comprovarMenu(lector.nextInt()));
+        opcio = lector.nextInt();
+        }while(comprovarMenu(opcio));
         
-        return opcio = lector.nextInt();
+        return opcio;
     }
     
     
