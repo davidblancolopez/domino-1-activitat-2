@@ -22,9 +22,9 @@ public class VistaText {
      * @param torn
      * @param nom 
      */
-    public void imprimirDadesTorn(int torn, String nom){
+    public void imprimirDadesTorn(int torn, Jugador jugador){
         
-        System.out.println("TORN " + torn + ": " + nom);
+        System.out.println("TORN " + torn + ": " + jugador.getNom());
             
     }
     
