@@ -29,6 +29,10 @@ public class ControlText {
     public void JugarJoc() {
         recollirNomJugadors();
         joc.iniciar(noms);
+        
+        /**
+         * Poner metodo de fitza inicial
+         */
         do {
             //Imprimim les dades del jugador que li toca.
             vText.imprimirDadesTorn(joc.getTorn(), joc.jugadors[joc.getTorn()]);
