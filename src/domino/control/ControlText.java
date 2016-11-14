@@ -33,6 +33,7 @@ public class ControlText {
         torn.inicial();
         
         joc.torn = joc.getTorn() + 1;
+        
         do {
             //Imprimim les dades del jugador que li toca.
             vText.imprimirDadesTorn(joc.getTorn(), joc.jugadors[joc.getTorn()]);
@@ -52,6 +53,9 @@ public class ControlText {
             //Actualitzem l'estat del joc.
             joc.actualitzarEstat();
 
+            for (int i = 0; i < 25; i++) {
+                System.out.println();
+            }
         } while (!joc.isFinalitzat());
 
        vText.imprimirGuanyador(joc.trobarGuanyador());
