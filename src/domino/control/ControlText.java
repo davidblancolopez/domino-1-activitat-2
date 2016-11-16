@@ -33,8 +33,7 @@ public class ControlText {
 
         torn.inicial();
 
-//        joc.torn = joc.getTorn() + 1;
-//Actualitzem l'estat del joc.
+        //Actualitzem l'estat del joc.
         joc.actualitzarEstat();
 
         do {
