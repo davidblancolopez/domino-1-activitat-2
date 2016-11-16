@@ -69,7 +69,6 @@ public class VistaText {
         do {
             System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
             posicio = lector.nextInt();
-            System.out.println(fitxa.size());
         } while (comprovarFitxaIntroduida(posicio, fitxa.size()));
 
         return posicio - 1;
