@@ -27,13 +27,14 @@ public class ControlText {
      * Començar joc
      */
     public void JugarJoc() {
+        //Iniciem el joc amb els següents metodes.
         recollirNomJugadors();
         joc.iniciar(noms);
 
         torn.inicial();
-        
+
         joc.torn = joc.getTorn() + 1;
-        
+
         do {
             //Imprimim les dades del jugador que li toca.
             vText.imprimirDadesTorn(joc.getTorn(), joc.jugadors[joc.getTorn()]);
@@ -53,12 +54,13 @@ public class ControlText {
             //Actualitzem l'estat del joc.
             joc.actualitzarEstat();
 
+            //Aquest bucle es només per a que no es mostrin tots els torns junts.
             for (int i = 0; i < 25; i++) {
                 System.out.println();
             }
         } while (!joc.isFinalitzat());
 
-       vText.imprimirGuanyador(joc.trobarGuanyador());
+        vText.imprimirGuanyador(joc.trobarGuanyador());
     }
 
     /**
@@ -114,8 +116,14 @@ public class ControlText {
         boolean extrem, correcte;
 
         //Fitxa.
+        //Agafem la posició amb un int.
         p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
+        
+        //Agafem la fitxa que correspon fent servir el int anterior.
         f = joc.jugadors[joc.getTorn()].getFitxes().get(p1);
+        
+        //Agafem l'extrem on es vol posar la ficha amb un boolean,
+        //si es vol a l'esquerra serà true sino sera false.
         extrem = vText.demanarCostat();
 
         //Cridem al metode que col·loca la fitxa.
@@ -135,14 +143,28 @@ public class ControlText {
 
         //Primer doble.
         System.out.println("1r doble.");
+        
+        //Agafem la posició amb un int.
         p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
+        
+        //Agafem l'extrem on es vol posar la ficha amb un boolean,
+        //si es vol a l'esquerra serà true sino sera false.
         extremP1 = vText.demanarCostat();
+        
+        //Agafem la fitxa que correspon fent servir el int anterior.
         d1 = joc.jugadors[joc.getTorn()].getFitxes().get(p1);
 
         //Segon doble.
         System.out.println("2n doble.");
+        
+        //Agafem la posició amb un int.
         p2 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
+        
+        //Agafem l'extrem on es vol posar la ficha amb un boolean,
+        //si es vol a l'esquerra serà true sino sera false.
         extremP2 = vText.demanarCostat();
+        
+        //Agafem la fitxa que correspon fent servir el int anterior.
         d2 = joc.jugadors[joc.getTorn()].getFitxes().get(p2);
 
         //Cridem al metode que col·loca els dobles.
