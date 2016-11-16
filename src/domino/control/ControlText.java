@@ -137,13 +137,13 @@ public class ControlText {
         System.out.println("1r doble.");
         p1 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         extremP1 = vText.demanarCostat();
-        d1 = jugador.fitxes.get(p1);
+        d1 = joc.jugadors[joc.getTorn()].getFitxes().get(p1);
 
         //Segon doble.
         System.out.println("2n doble.");
         p2 = vText.demanarFitxaJugador(joc.jugadors[joc.getTorn()].getFitxes());
         extremP2 = vText.demanarCostat();
-        d2 = jugador.fitxes.get(p2);
+        d2 = joc.jugadors[joc.getTorn()].getFitxes().get(p2);
 
         //Cridem al metode que col·loca els dobles.
         correcte = torn.colocarDosDobles(d1, extremP1, d2, extremP2);
