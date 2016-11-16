@@ -33,7 +33,9 @@ public class ControlText {
 
         torn.inicial();
 
-        joc.torn = joc.getTorn() + 1;
+//        joc.torn = joc.getTorn() + 1;
+//Actualitzem l'estat del joc.
+        joc.actualitzarEstat();
 
         do {
             //Imprimim les dades del jugador que li toca.
