@@ -69,6 +69,7 @@ public class VistaText {
         do {
             System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
             posicio = lector.nextInt();
+            System.out.println(fitxa.size());
         } while (comprovarFitxaIntroduida(posicio, fitxa.size()));
 
         return posicio - 1;
@@ -85,7 +86,7 @@ public class VistaText {
         boolean comprovar = true;
 
         //Si es compleix la condició el boolean serà False, per a qe així pugui sortir del bucle que es troba en "demanarFitxa".
-        if (fitxa > 0 && longitudFitxesJugador <= 7) {
+        if (fitxa > 0 && fitxa <= longitudFitxesJugador) {
             comprovar = false;
         }
 
