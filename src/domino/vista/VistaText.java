@@ -82,8 +82,9 @@ public class VistaText {
      * @return
      */
     public boolean comprovarFitxaIntroduida(int fitxa, int longitudFitxesJugador) {
-        boolean comprovar = true;;
+        boolean comprovar = true;
 
+        //Si es compleix la condició el boolean serà False, per a qe així pugui sortir del bucle que es troba en "demanarFitxa".
         if (fitxa > 0 && longitudFitxesJugador <= 7) {
             comprovar = false;
         }
@@ -124,6 +125,7 @@ public class VistaText {
     public boolean comprovarCostat(String opcio) {
         boolean comprovar = true;
 
+        //Si es compleix la condició el boolean serà False, per a qe així pugui sortir del bucle que es troba en "demanarCostat".
         if (opcio.equals("e") || opcio.equals("E") || opcio.equals("D") || opcio.equals("d")) {
             comprovar = false;
         }
@@ -157,6 +159,7 @@ public class VistaText {
     public boolean comprovarMenu(int opcio) {
         boolean comprovar = true;
 
+        //Si es compleix la condició el boolean serà False, per a qe així pugui sortir del bucle que es troba en "menu".
         if (opcio > 0 && opcio < 4) {
             comprovar = false;
         }
