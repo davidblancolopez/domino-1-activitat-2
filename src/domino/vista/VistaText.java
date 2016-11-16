@@ -25,7 +25,7 @@ public class VistaText {
     }
 
     /**
-     * Metode per a imprimir les fitxes que s'han jugat fins ara.
+     * Metode per a imprimir les fitxes que s'han jugat fins ara mitjançant un StringBuilder.
      *
      * @param fitxes
      */
@@ -179,6 +179,10 @@ public class VistaText {
         return nom;
     }
 
+    /**
+     * Metode que retorna el nom del guanyador.
+     * @param guanyador 
+     */
     public void imprimirGuanyador(Jugador guanyador) {
         System.out.println("El guanyador es: " + guanyador.getNom());
     }
