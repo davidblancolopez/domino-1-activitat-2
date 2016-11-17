@@ -64,11 +64,17 @@ public class VistaText {
      * @return
      */
     public int demanarFitxaJugador(List<Fitxa> fitxa) {
-        int posicio;
+        int posicio = 0;
 
         do {
             System.out.println("Quina fitxa vols posar? (Introdueix la posició en que es troba)");
-            posicio = lector.nextInt();
+            try{
+                posicio = lector.nextInt();
+            }catch(Exception e){
+                System.out.println("Opció introduida incorrecte.");
+                lector.next();
+            }
+                    
         } while (comprovarFitxaIntroduida(posicio, fitxa.size()));
 
         return posicio - 1;
