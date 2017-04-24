@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 
 public class TaulerDomino extends javax.swing.JFrame {
 
-    private JPanel pCard, pNord, pEst;
+    private JPanel pCard, pNord, pEst, pSud, pOest;
     
     
     public TaulerDomino(){
@@ -37,7 +37,7 @@ public class TaulerDomino extends javax.swing.JFrame {
     
     
     private void Configuracio() {
-        this.setPreferredSize(new Dimension(400, 400));
+        this.setPreferredSize(new Dimension(800, 800));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setLayout(new BorderLayout());
@@ -45,7 +45,13 @@ public class TaulerDomino extends javax.swing.JFrame {
         pNord = new JPanel();
         pEst = new JPanel();
         pEst = new JPanel();
+        pSud = new JPanel();
         
+        
+        this.add(pNord, BorderLayout.NORTH);
+        this.add(pEst, BorderLayout.EAST);
+        this.add(pOest, BorderLayout.WEST);
+        this.add(pSud, BorderLayout.SOUTH);
 
         pCard = new JPanel(new CardLayout());
 
