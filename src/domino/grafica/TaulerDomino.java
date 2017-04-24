@@ -53,6 +53,18 @@ public class TaulerDomino extends javax.swing.JFrame {
         
         ImageIcon imatge3 = new ImageIcon("C:\\Users\\ALUMNEDAM\\Documents\\NetBeansProjects\\DOMINO-1-activitat-2 David Blanco\\domino-1-activitat-2\\Assets\\fitxa0-2.png");
         fitxa1_2.setIcon(imatge3);
+        fitxa1_4.setIcon(imatge3);
+        fitxa1_5.setIcon(imatge3);
+        fitxa1_6.setIcon(imatge3);
+        fitxa1_7.setIcon(imatge3);
+        
+        fitxesJug1.add(fitxa1_1);
+        fitxesJug1.add(fitxa1_2);
+        fitxesJug1.add(fitxa1_3);
+        fitxesJug1.add(fitxa1_4);
+        fitxesJug1.add(fitxa1_5);
+        fitxesJug1.add(fitxa1_6);
+        fitxesJug1.add(fitxa1_7);
         
         pNord.setBackground(Color.red);
         pSud.setBackground(Color.GREEN);
