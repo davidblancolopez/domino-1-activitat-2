@@ -7,6 +7,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.HeadlessException;
+import java.awt.event.ActionEvent;
 import java.util.ArrayDeque;
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
@@ -40,6 +41,14 @@ public class TaulerDomino extends javax.swing.JFrame {
     }
     
 
+    public void actionPerformed(ActionEvent e) {
+        ((CardLayout) pCard.getLayout()).show(pCard, e.getActionCommand());
+    }
+    
+    
+    /**
+     * Metode que crea i afegeix els menus al joc.
+     */
     private void afegirMenu(){
         //Inicialización de menu.
         barraOpcions = new JMenuBar();
@@ -55,6 +64,9 @@ public class TaulerDomino extends javax.swing.JFrame {
         
     }
     
+    /**
+     * Metode de configuració on es determina el tamany del tauler, la distribució, etc.
+     */
     private void Configuracio() {
         this.setPreferredSize(new Dimension(800, 800));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -137,4 +149,5 @@ public class TaulerDomino extends javax.swing.JFrame {
             }
         });
     }
+    
 }
