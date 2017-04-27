@@ -14,6 +14,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 
@@ -21,7 +24,13 @@ public class TaulerDomino extends javax.swing.JFrame {
 
     private JPanel pCard, pNord, pEst, pSud, pOest;
     public ArrayDeque<JButton> fitxesJug1;
+    private JMenuBar barraOpcions;
+    private JMenuItem item1, item2;
+    private JMenu menu;
+    
+    
     private JButton fitxa1_1, fitxa1_2, fitxa1_3, fitxa1_4, fitxa1_5, fitxa1_6, fitxa1_7;
+    
     
     public TaulerDomino(){
         Configuracio();
@@ -34,6 +43,12 @@ public class TaulerDomino extends javax.swing.JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setLayout(new BorderLayout());
+        
+        
+        barraOpcions = new JMenuBar();
+        menu = new JMenu();
+        item1 = new JMenuItem();
+        item2 = new JMenuItem();
 
         pNord = new JPanel();
         pOest = new JPanel();
