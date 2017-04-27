@@ -24,9 +24,12 @@ public class TaulerDomino extends javax.swing.JFrame {
 
     private JPanel pCard, pNord, pEst, pSud, pOest;
     public ArrayDeque<JButton> fitxesJug1;
+    
+    //Menus
     private JMenuBar barraOpcions;
-    private JMenuItem item1, item2;
     private JMenu menu;
+    private JMenuItem item1, item2;
+
     
     
     private JButton fitxa1_1, fitxa1_2, fitxa1_3, fitxa1_4, fitxa1_5, fitxa1_6, fitxa1_7;
@@ -37,6 +40,20 @@ public class TaulerDomino extends javax.swing.JFrame {
     }
     
 
+    private void afegirMenu(){
+        //Inicialización de menu.
+        barraOpcions = new JMenuBar();
+        menu = new JMenu("Arxiu");
+        barraOpcions.add(menu);
+        
+        item1 = new JMenuItem("Configuració");
+        item2 = new JMenuItem("Sortir");
+        menu.add(item1);
+        menu.add(item2);
+        
+        setJMenuBar(barraOpcions);
+        
+    }
     
     private void Configuracio() {
         this.setPreferredSize(new Dimension(800, 800));
@@ -44,12 +61,8 @@ public class TaulerDomino extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setLayout(new BorderLayout());
         
+        afegirMenu();
         
-        barraOpcions = new JMenuBar();
-        menu = new JMenu();
-        item1 = new JMenuItem();
-        item2 = new JMenuItem();
-
         pNord = new JPanel();
         pOest = new JPanel();
         pEst = new JPanel();
