@@ -26,24 +26,20 @@ public class TaulerDomino extends javax.swing.JFrame {
 
     private JPanel pCard, pNord, pEst, pSud, pOest;
     public ArrayDeque<JButton> fitxesJug1;
-    
     //Menus
     private JMenuBar barraOpcions;
     private JMenu menu;
     private JMenuItem item1, item2;
-
-    
-    
     private JButton fitxa1_1, fitxa1_2, fitxa1_3, fitxa1_4, fitxa1_5, fitxa1_6, fitxa1_7;
+    
+    
+    
     
     
     public TaulerDomino(){
         Configuracio();
     }
-    
 
-
-    
     
     /**
      * Metode que crea i afegeix els menus al joc.
@@ -54,12 +50,10 @@ public class TaulerDomino extends javax.swing.JFrame {
         menu = new JMenu("Arxiu");
         barraOpcions.add(menu);
         
-        item1 = new JMenuItem("Configuració");
+        item1 = new JMenuItem("Instruccions");
         item2 = new JMenuItem("Sortir");
         menu.add(item1);
         menu.add(item2);
-        
-        
         
         setJMenuBar(barraOpcions);
     }
@@ -99,37 +93,7 @@ public class TaulerDomino extends javax.swing.JFrame {
         fitxa1_1.setIcon(Img);
         fitxa1_1.setPreferredSize(new Dimension(50,50));
         pOest.add(fitxa1_1);
-//        
-//        
-//        fitxa1_2=new JButton();
-//        ImageIcon imatge2 = new ImageIcon("C:\\Users\\ALUMNEDAM\\Documents\\NetBeansProjects\\DOMINO-1-activitat-2 David Blanco\\domino-1-activitat-2\\Assets\\Fitxa0-1.png");
-//        fitxa1_2.setIcon(imatge2);
-//        
-//        fitxa1_3=new JButton();
-//        fitxa1_4=new JButton();
-//        fitxa1_5=new JButton();
-//        fitxa1_6=new JButton();
-//        fitxa1_7=new JButton();
-//
-//        ImageIcon imatge3 = new ImageIcon("C:\\Users\\ALUMNEDAM\\Documents\\NetBeansProjects\\DOMINO-1-activitat-2 David Blanco\\domino-1-activitat-2\\Assets\\Fitxa0-2.png");
-//        fitxa1_2.setIcon(imatge3);
-//        fitxa1_4.setIcon(imatge3);
-//        fitxa1_5.setIcon(imatge3);
-//        fitxa1_6.setIcon(imatge3);
-//        fitxa1_7.setIcon(imatge3);
-//        
-//        fitxesJug1 = new ArrayDeque<JButton>();
-//        
-//        fitxesJug1.add(fitxa1_1);
-//        fitxesJug1.add(fitxa1_2);
-//        fitxesJug1.add(fitxa1_3);
-//        fitxesJug1.add(fitxa1_4);
-//        fitxesJug1.add(fitxa1_5);
-//        fitxesJug1.add(fitxa1_6);
-//        fitxesJug1.add(fitxa1_7);
-              
 
-     
         
         pNord.setBackground(Color.red);
         pSud.setBackground(Color.GREEN);
